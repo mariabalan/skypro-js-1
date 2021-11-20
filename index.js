@@ -1,5 +1,11 @@
-"use strict";
-let product = "Кресло";
-let price = "28 000";
-let discription = `${product}, цена ${price} рублей`;
-alert(discription);
+function getRandom() {
+  if (min >= max) {
+    console.error("Такого не может быть!");
+    return false; }
+    else {
+    return Math.floor(Math.random() * (max - min)) + min;
+    }
+}
+let min = Number(prompt('Введите минимальное значение:'));
+let max = Number(prompt('Введите максимальное значение:'));
+console.log(getRandom());
